@@ -1,0 +1,103 @@
+<!-- <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+  <a class="navbar-brand" href="">Blog</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/blog">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/blog/create">New</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li *ngIf="!currentUser" class="nav-item" routerLinkActive="active">
+        <a routerLink="/Register" class="nav-link">Register</a>
+      </li>
+      <li *ngIf="!currentUser" class="nav-item" routerLinkActive="active">
+        <a routerLink="/Login" class="nav-link">Login</a>
+      </li>
+
+      <li *ngIf="currentUser" class="nav-item" routerLinkActive="active">
+        <a routerLink="/login" class="nav-link">{{ currentUser.email }}</a>
+      </li>
+
+      <li *ngIf="currentUser" class="nav-item" routerLinkActive="active">
+        <button (click)="signOut()" class="nav-link btn-logout">Logout</button>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+
+<!-- 
+      <nav class="navbar navbar-expand-md navbar-light bg-transparent ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <form action="">
+                    <button type="button" class="btn btn-outline-transparont">Login</button>
+                    <button type="button" class="btn btn-outline-danger">Register</button>
+                  </form>
+                  
+                      
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+  -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link " href="#">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Top Destination</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+          </li>
+          <form action="">
+          <button  type="button" class="Login btn"><a routerLink="/Login">Login</a></button>
+          <button  type="button" class="Register btn"><a routerLink="/Register" class="nav-link">Register</a></button>
+        </form>
+        
+            
+      </ul>
+    </div>
+  </div>
+  </nav> 
+  
+
